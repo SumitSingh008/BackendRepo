@@ -15,6 +15,8 @@ app.get('/login', (req, res) => {
     res.send('<h1>SUMIT</h1>');
 })
 
+const port = process.env.PORT || 3000;
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
-})
+});
